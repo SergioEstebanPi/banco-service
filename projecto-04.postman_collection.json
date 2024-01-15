@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "bee03c32-7f04-40f9-bfa8-cf9bd788e35d",
+		"name": "projecto-04",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28422949"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8083/query/account/list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/query/account/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"query",
+						"account",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8083/commands/account/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"currency\": \"USD\",\n    \"initialBalance\": 1000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/commands/account/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"commands",
+						"account",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8083/query/account/byId/5806baa8-644e-4c98-ace7-b4f8b1b7df99",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/query/account/byId/5806baa8-644e-4c98-ace7-b4f8b1b7df99",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"query",
+						"account",
+						"byId",
+						"5806baa8-644e-4c98-ace7-b4f8b1b7df99"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8083/commands/account/debit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"accountId\": \"dd3d9082-6261-4f19-a02a-73d2ffeae20e\",\n    \"currency\": \"USD\",\n    \"amount\": 1000    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/commands/account/debit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"commands",
+						"account",
+						"debit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8083/commands/account/credit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"accountId\": \"dd3d9082-6261-4f19-a02a-73d2ffeae20e\",\n    \"currency\": \"USD\",\n    \"amount\": 200    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/commands/account/credit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"commands",
+						"account",
+						"credit"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
