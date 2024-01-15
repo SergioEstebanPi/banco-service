@@ -5,6 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface TransactionRepository extends JpaRepository<AccountTransaction, Long> {
 
-    AccountTransaction findTop1ByAccountIdByTimestampDesc(String accountId);
+    AccountTransaction findTop1ByAccountIdOrderByTimestampDesc(String accountId);
 
 }

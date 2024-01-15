@@ -27,7 +27,7 @@ public class AccountCommandController {
         return commandGateway.send(new CreateAccountCommand(
                 UUID.randomUUID().toString(),
                 createAccountRequestDTO.getCurrency(),
-                createAccountRequestDTO.getAmount()
+                createAccountRequestDTO.getInitialBalance()
         ));
     }
 

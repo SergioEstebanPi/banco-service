@@ -118,7 +118,7 @@ public class AccountEventHandlerService {
     public AccountWatchEvent on(GetAccountBalanceStream query){
         Account account = accountRepository.findById(query.getAccountId()).get();
         AccountTransaction accountTransaction =
-                transactionRepository.findTop1ByAccountIdByTimestampDesc(query.getAccountId());
+                transactionRepository.findTop1ByAccountIdOrderByTimestampDesc(query.getAccountId());
 
         if(accountTransaction != null){
             return new AccountWatchEvent(

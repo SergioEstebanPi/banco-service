@@ -11,5 +11,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class CreateAccountRequestDTO {
     private String currency;
-    private double amount;
+    private double initialBalance;
 }

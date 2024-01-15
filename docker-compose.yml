@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  axon-server:
+    image: axoniq/axonserver
+    container_name: axon-server
+    ports:
+      - 8124:8124
+      - 8024:8024
+
+  db:
+    image: mysql:8.0
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: test
+      MYSQL_DATABASE: bancoservice
+      MYSQL_USER: dev
+      MYSQL_PASSWORD: dev
+    ports:
+      - "3306:3306"
