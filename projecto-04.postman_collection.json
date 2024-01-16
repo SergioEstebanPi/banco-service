@@ -34,7 +34,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"currency\": \"USD\",\n    \"initialBalance\": 1000\n}",
+					"raw": "{\n    \"currency\": \"USD\",\n    \"initialBalance\": 6000\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -63,7 +63,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8083/query/account/byId/5806baa8-644e-4c98-ace7-b4f8b1b7df99",
+					"raw": "http://localhost:8083/query/account/byId/dd3d9082-6261-4f19-a02a-73d2ffeae20e",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -73,7 +73,7 @@
 						"query",
 						"account",
 						"byId",
-						"5806baa8-644e-4c98-ace7-b4f8b1b7df99"
+						"dd3d9082-6261-4f19-a02a-73d2ffeae20e"
 					]
 				}
 			},
